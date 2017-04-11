@@ -1,0 +1,309 @@
+/* ********** GENERAL ********** */
+* {
+	margin: 0 auto;
+}
+
+body {
+	background-image: url("../images/symphony.png");
+	background-repeat:repeat;
+}
+
+div#content {
+	width: 960px;
+}
+
+div#main {
+	width: 650px;
+}
+
+div#sidebar {
+	width: 270px;
+}
+
+div#clear {
+	clear:both;
+}
+
+/* ********** HEADER ********** */
+header {
+	height:90px;
+	background-color: #ffffff;
+	border-style: solid; 
+	border-color: #cccccc;
+	border-width: 0px 0px 2px 0px;
+}
+
+/* ********** FOOTER ********** */
+
+footer {
+	background-color: #666666;
+	position:fixed;
+	bottom:0;
+	width:100%;
+	height:94px;	
+	border-style:solid;
+	border-color:#00afa8;
+	border-width: 8px 0px 0px 0px;
+}
+
+footer p {
+	display:block;
+	text-align: center;
+	padding:28.5px 50px 28.5px 50px;
+}
+
+/* ********** TEXT ********** */
+
+h1, h2, h3 {
+	font-family: "Georgia", Times, "Times New Roman", serif;
+	letter-spacing: 1.5px;
+}
+
+h1 {
+	display:block;
+	float: left;
+	color:#ffffff;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #00afa8;
+	padding:27.5px 50px 27.5px 50px;
+	width:200px;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:156px;
+	margin-right:0px;
+	z-index: 4;
+
+}
+
+h2 {
+	color:#00afa8;
+	font-size:28px;
+	font-weight: bold;
+	text-align: left;
+	display:block;
+	float:left;
+	background-color: #ffffff;
+	border-style: solid;
+	border-color:#dddddd;
+	border-width: 0px 0px 3px 0px;
+}
+
+h2#about {
+	padding: 13px 480px 35px 8px;
+}
+
+h2#contact {
+	padding: 13px 520px 35px 8px;
+}
+
+h2#portfolio {
+	padding:13px 500px 35px 8px;
+}
+
+
+h3 {
+	font-size:19px;
+	text-align: center;
+}
+
+h3#connect {
+	color:#00afa8;
+
+	font-weight:bold;
+	border-style:solid;
+	border-color: #dddddd;
+	border-width: 0px 0px 3px 0px;
+	padding: 28px 0px 28px 0px;
+}
+
+
+h3.portname {
+	color:#ffffff;
+	background-color: #00afa8;
+	text-align: center;
+
+	position:absolute;
+	left:0px;
+	top:250px;
+	padding:30px 0px 30px 0px;
+	width:100%;
+
+	display:inline-block;
+	float:left;
+}
+
+p, a, form, input, label {
+	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+	color:#9c9d9e;
+	font-size: 18px;
+	line-height: 2;
+}
+
+footer p {
+	font-size:14px;
+}
+
+/* ********** NAVIGATION ********** */
+
+nav {
+	position:absolute;
+	width:100%;
+	top:30px;
+	right:135px;
+}
+
+ul {
+	float:right;
+}
+
+li {
+	list-style-type: none;
+	border-style: solid;
+	border-width: 0px 1.5px 0px 0px;
+	border-color: #dddddd;
+	float:left;
+	text-align:center;
+	padding:0px 22px 0px 15px;
+}
+
+li:last-child {
+	border-width: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #4aaaa5;
+}
+
+a:visited {
+	color: #025760;
+}
+
+/* ********** IMAGES ********** */
+
+img#profilepic {
+	width:30%;
+	display:block;
+	float:left;
+	padding:32px 25px 25px 25px;
+}
+
+img.social {
+	width:25%;
+	padding:30px 2px 0px 10px;
+}
+
+img.social:hover {
+	opacity:0.5;
+}
+
+img.portfolio {
+	width:300px;
+	margin-top:40px;
+	position:relative;
+	
+	display:inline-block;
+	float:left;
+}
+
+img.portfolio:hover {
+	opacity:0.5;
+}
+
+/* ********** DIV#MAIN ********** */
+
+div#main {
+	position:relative;
+	left:156px;
+	top:40px;
+	background-color: white;
+	display:block;
+	float:left;
+	border-style: solid;
+	border-color:#dddddd;
+	border-width: 2px 2px 2px 2px;
+	padding:35px;
+	margin-bottom:144px;
+}
+
+div#main p {
+	padding:32px 0px 0px 0px;
+}
+/* ********** DIV#SIDEBAR ********** */
+
+div#sidebar {
+	position:absolute;
+	right:241px;
+	top:131px;
+	background-color:white;
+	display: inline-block;
+	float: left;
+	border-style: solid;
+	border-color: #dddddd;
+	border-width: 2px 2px 2px 2px;
+	margin-bottom:144px;
+	height:201px;
+	padding:0px 32px 0px 32px;
+	box-sizing: border-box;
+}
+
+/* ********** FORMS ********** */
+
+form {
+	clear:both;
+	padding:31px 0px 0px 0px;
+}
+
+input#msg {
+	height:200px;
+}
+
+input#submit {
+	width:118px;
+	height: 43px;
+	margin:15px 0px 3px 0px;
+
+	background-color: #00afa8;
+	border:none;
+
+	color:#ffffff;
+	font-size:18px;
+}
+
+input#submit:hover {
+	box-sizing: border-box;
+	background-color:#ffffff;
+	border-style:solid;
+	border-color: #00afa8;
+	padding:1px 0px 1px 0px;
+	border-width:2px;
+	color:#00afa8;
+	text-align: center;
+}
+
+input {
+	width:630px;
+	font-size:14px;
+	padding:5px;
+	margin:5px 5px 10px 0px;
+}
+
+/* ********** PORTFOLIO ********** */
+
+div.thumbnail {
+	width:300px;
+	margin:0;
+	padding:0px;
+	display: block;
+	float:left;
+	position:relative;
+}
+
+div.thumbnail:nth-of-type(even) {
+	margin-left:48px;
+}
