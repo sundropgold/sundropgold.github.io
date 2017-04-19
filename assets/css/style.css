@@ -1,9 +1,6 @@
 /* ********** GENERAL ********** */
 * {
-	margin:0 auto;
-	box-sizing: border-box;
-	max-width: 100%;
-	overflow-x: hidden;
+	margin: 0 auto;
 }
 
 body {
@@ -11,108 +8,126 @@ body {
 	background-repeat:repeat;
 }
 
-/* ********* HEADER / NAV ********** */
-
-nav.navbar-nav {
-	width:100%;
-	margin:0;
-	margin-bottom:2%;
+div#content {
+	width: 960px;
 }
 
-div#nav {
-	position:absolute;
-	top:24%;
-	right:5%;
-	z-index: 5;
+div#main {
+	width: 650px;
 }
 
-h1 {
-	font-weight: bold;
-	letter-spacing: 1.5px;
-	position:relative;
-	left:14%;
-	font-size: 55px;
-	z-index: 2;
+div#sidebar {
+	width: 270px;
 }
 
-li {
-	border-style: solid;
-	border-width: 0px 1.5px 0px 0px;
-	border-color: #bf5b94;
-	float:left;
-	text-align:center;
-
-	padding:0px 18px 0px 12px;
+div#clear {
+	clear:both;
 }
 
-li:last-child {
-	border-width: 0px;
+/* ********** HEADER ********** */
+header {
+	height:90px;
+	background-color: #ffffff;
+	border-style: solid; 
+	border-color: #cccccc;
+	border-width: 0px 0px 2px 0px;
 }
 
 /* ********** FOOTER ********** */
 
-div#footer {
-	position: absolute;
-	right:0;
-	left:0;
+footer {
+	background-color: #666666;
+	clear:both;
+	/*position:fixed;
+	bottom:0;*/
 	width:100%;
-	height:90px;
-	padding:3% 2%;
-
-	color:#ffffff;
-	background-color: #525253;
+	height:94px;	
 	border-style:solid;
-	border-color:#bf5b94;
+	border-color:#00afa8;
 	border-width: 8px 0px 0px 0px;
+}
 
+footer p {
+	display:block;
 	text-align: center;
+	padding:28.5px 50px 28.5px 50px;
 }
 
 /* ********** TEXT ********** */
 
-h2 {
-	font-size:40px;
+h1, h2, h3 {
+	font-family: "Georgia", Times, "Times New Roman", serif;
+	letter-spacing: 1.5px;
 }
 
-h3 {
-	font-size:25px;
+h1 {
+	display:block;
+	float: left;
+	color:#ffffff;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #00afa8;
+	padding:27.5px 50px 27.5px 50px;
+	width:200px;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:156px;
+	margin-right:0px;
+	z-index: 4;
+
+}
+
+h2 {
+	color:#00afa8;
+	font-size:28px;
+	font-weight: bold;
+	text-align: left;
+	display:block;
+	float:left;
+	background-color: #ffffff;
+	border-style: solid;
+	border-color:#dddddd;
+	border-width: 0px 0px 3px 0px;
 }
 
 h2#about {
-	border-style:solid;
-	border-color: #bf5b94;
-	border-width: 0px 0px 2px 0px;
-	padding: 2% 0px 2% 0px;
-}
-
-h2#portfolio {
-	border-style:solid;
-	border-color: #bf5b94;
-	border-width: 0px 0px 2px 0px;
-	padding: 2% 0px 2% 0px;
+	padding: 13px 490px 35px 8px;
 }
 
 h2#contact {
-	border-style:solid;
-	border-color: #bf5b94;
-	border-width: 0px 0px 2px 0px;
-	padding: 2% 0px 2% 0px;
+	padding: 13px 520px 35px 8px;
+}
+
+h2#portfolio {
+	padding:13px 498px 35px 8px;
+}
+
+
+h3 {
+	font-size:19px;
+	text-align: center;
 }
 
 h3#connect {
+	color:#00afa8;
+
+	font-weight:bold;
 	border-style:solid;
-	border-color: #bf5b94;
-	border-width: 0px 0px 2px 0px;
-	padding: 2% 0px 2% 0px;
-	width:79%;
+	border-color: #dddddd;
+	border-width: 0px 0px 3px 0px;
+	padding: 28px 0px 28px 0px;
 }
 
-h3#portname {
-	color:#ffffff;
-	background-color: #bf5b94;
-	text-align: center;
-	font-size: 16px;
 
+h3.portname {
+	color:#ffffff;
+	background-color: #00afa8;
+	text-align: center;
+
+	position:absolute;
+	left:0px;
+	top:262px;
 	padding:23px 0px 23px 0px;
 	width:100%;
 
@@ -120,274 +135,698 @@ h3#portname {
 	float:left;
 }
 
+p, a, form, input, label {
+	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+	color:#9c9d9e;
+	font-size: 18px;
+	line-height: 2;
+}
+
+footer p {
+	font-size:14px;
+}
+
+/* ********** NAVIGATION ********** */
+
+nav {
+	position:absolute;
+	width:100%;
+	top:30px;
+	right:135px;
+}
+
+ul {
+	float:right;
+}
+
+li {
+	list-style-type: none;
+	border-style: solid;
+	border-width: 0px 1.5px 0px 0px;
+	border-color: #dddddd;
+	float:left;
+	text-align:center;
+	padding:0px 22px 0px 15px;
+}
+
+li:last-child {
+	border-width: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #4aaaa5;
+}
+
+a:visited {
+	color: #025760;
+}
+
 /* ********** IMAGES ********** */
+
 img#profilepic {
 	width:30%;
+	display:block;
 	float:left;
 	padding:32px 25px 25px 25px;
 }
 
 img.social {
-	width:27%;
-	padding:3% 1% 0px 1%;
-	margin:2%;
+	width:25%;
+	padding:30px 2px 0px 10px;
 }
 
+img.social:hover {
+	opacity:0.5;
+}
+
+img.portfolio {
+	width:300px;
+	margin-top:40px;
+	position:relative;
+	
+	display:inline-block;
+	float:left;
+}
+
+img.portfolio:hover {
+	opacity:0.5;
+}
 
 /* ********** DIV#MAIN ********** */
-div#main {
 
-	width:55%;
-	margin-top:1%;
-	margin-left:5%;
-	
+div#main {
+	position:relative;
+	left:156px;
+	top:40px;
+	background-color: white;
+	display:block;
+	float:left;
 	border-style: solid;
-	border-color:#bf5b94;
+	border-color:#dddddd;
 	border-width: 2px 2px 2px 2px;
 	padding:35px;
 	margin-bottom:144px;
-	background-color: #ffffff;
+}
+
+div#main p {
+	padding:32px 0px 0px 0px;
 }
 
 /* ********** DIV#SIDEBAR ********** */
-div#sidebar {
 
-	width:27%;
-	margin-top:1%;
-	margin-left:5%;
-	
+div#sidebar {
+	position:absolute;
+	right:241px;
+	top:131px;
+	background-color:white;
+	display: inline-block;
+	float: left;
 	border-style: solid;
-	border-color:#bf5b94;
+	border-color: #dddddd;
 	border-width: 2px 2px 2px 2px;
-	padding:2%;
 	margin-bottom:144px;
-	background-color: #ffffff;
+	height:201px;
+	padding:0px 32px 0px 32px;
+	box-sizing: border-box;
 }
 
 /* ********** FORMS ********** */
-button#submit {
-	height:50px;
-	width:120px;
+
+form {
+	clear:both;
+	padding:31px 0px 0px 0px;
 }
 
-/* ********** RESPONSIVE DESIGN *********** */
-@media screen and (max-width:430px) {
+input#msg {
+	height:200px;
+}
 
-	/* --- HEADER/NAV -- */
+input#submit {
+	width:118px;
+	height: 43px;
+	margin:15px 0px 3px 0px;
 
-	h1 {
-		left:12%;
-	}
+	background-color: #00afa8;
+	border:none;
 
-	div#nav {
-		position: relative;
-		width:100%;
-		margin:0 auto;
-		top:2%;
-		left:5%;
-		margin:2%;
-	}
+	color:#ffffff;
+	font-size:18px;
+}
 
-	/* --- DIV#MAIN --- */
+input#submit:hover {
+	box-sizing: border-box;
+	background-color:#ffffff;
+	border-style:solid;
+	border-color: #00afa8;
+	padding:1px 0px 1px 0px;
+	border-width:2px;
+	color:#00afa8;
+	text-align: center;
+}
+
+input {
+	width:630px;
+	font-size:14px;
+	padding:5px;
+	margin:5px 5px 10px 0px;
+}
+
+/* ********** PORTFOLIO ********** */
+
+div.thumbnail {
+	width:300px;
+	margin:0;
+	padding:0px;
+	display: block;
+	float:left;
+	position:relative;
+}
+
+div.thumbnail:nth-of-type(even) {
+	margin-left:48px;
+}
+
+/* ********** RESPONSIVE DESIGN ********** */
+
+/* ----- MOBILE ----- */
+@media screen and (max-width: 640px) {
 	
-	div#main {
+	/* --- HEADER --- */
 
-		width:93%;
-		margin-top:5%;
-		margin-left:6%;
-		margin-right: 3%;
-		margin-bottom:5%;
-
+	body {
+		max-width:100%;
+		overflow-x:hidden;
 	}
 
-	img#profilepic {
-		width:90%;
-		margin-left:5%;
-		display: block;
-	}
-
-	div#main p {
-		display: block;
-		float: left;
-	}
-
-	/* --- DIV#SIDEBAR ---*/
-	div#sidebar {
-
-		width:93%;
-		margin-left:6%;
-		margin-right:1%;
-	}
-
-}
-
-@media screen and (min-width: 431px) and (max-width: 640px) {
-
-	/* --- HEADER/NAV -- */
-
-	h1 {
-		left:28%;
-	}
-
-	div#nav {
-		position: relative;
+	header {
+		position: static;
+		height:170px;
 		width:100%;
 		margin:0 auto;
-		top:2%;
-		left:21%;
-		margin:2%;
+	}
+
+	h1 {
+		position:relative;
+		left:2%;
+
+		text-align: center;
+		background-color:#00afa8;
+
+		width:100%;
+		margin-left:-20px;
+		padding:5% 0% 5% 5%;
+	}
+
+	/* --- FOOTER --- */
+	footer {
+
+		width:100%;
+		height:94px;	
+	}
 
 
+	/* --- NAVIGATION --- */
+
+	nav {
+		position: relative;
+		width: 100%;
+		margin:0 auto;
+		top:18px;
+		bottom:5px;
+	}
+
+	ul {
+		float:left;
+		margin-left: 52%;
+	}
+
+	li {
+		display:inline-block;
+		position:relative;
+		list-style-type: none;
+		border-style: solid;
+		border-width: 0px 1.5px 0px 0px;
+		border-color: #dddddd;
+		float:left;
+		text-align:center;
+		padding:0px 13px 0px 13px;
+
+	}
+
+	li:last-child {
+		border-width: 0px;
+	}
+
+	/* --- DIV#CONTENT--- */
+
+	div#content {
+		width:95%;
+		margin-left:2.5%;
+		margin-right:2.5%;
 	}
 
 	/* --- DIV#MAIN --- */
-	div#main {
 
-		width:93%;
-		margin-top:5%;
-		margin-left:6%;
-		margin-right: 3%;
-		margin-bottom:5%;
-
+	h2#about {
+		padding: 13px 70% 35px 8px;
 	}
 
 	img#profilepic {
 		width:90%;
-		margin-left:5%;
-		display: block;
+		display:block;
+		float:left;
+		padding:32px 25px 25px 25px;
+	}
+
+	div#main {
+		position:relative;
+		left:0;
+
+		width:89%;
+		display:block;
+		float:left;
+
+		background-color: white;
+		border-style: solid;
+		border-color:#dddddd;
+		border-width: 2px 2px 2px 2px;
 	}
 
 	div#main p {
-		display: block;
-		float: left;
+		padding:32px 0px 0px 0px;
 	}
 
-	/* --- DIV#SIDEBAR ---*/
+
+	/* --- DIV#SIDEBAR --- */
+
+	h3#connect {
+		color:#00afa8;
+
+		
+		float:left;
+
+		font-weight:bold;
+		border-style:solid;
+		border-color: #dddddd;
+		border-width: 0px 0px 3px 0px;
+		padding: 28px 64% 28px 0px;
+	}
+
+	img.social {
+		width:17%;
+		padding:15px 2px 0px 10px;
+	}
+
 	div#sidebar {
+		position:relative;
+		left:0px;
+		top:0px;
 
-		width:93%;
-		margin-left:6%;
-		margin-right:1%;
+		background-color:white;
+		border-style: solid;
+		border-color: #dddddd;
+		border-width: 2px 2px 2px 2px;
+
+		margin-bottom:144px;
+		margin-top:-10%;
+		float: left;
+		height:201px;
+		width:101%;
+		padding:0px 32px 0px 32px;
+		box-sizing: border-box;
 	}
+
+	/* --- PORTFOLIO ---*/
+	
+	h2#portfolio {
+		padding:13px 72% 35px 8px;
+	}
+
+	h3.portname {
+		color:#ffffff;
+		background-color: #00afa8;
+		text-align: center;
+
+		position:absolute;
+		left:0px;
+		top:80%;
+		padding:23px 39.5% 23px 39.5%;
+		width:100%;
+
+		display:inline-block;
+		float:left;
+	}
+
+	img.portfolio {
+		width:179%;
+		margin-top:40px;
+		position:relative;
+	}
+
+	div.thumbnail, div.thumbnail:nth-of-type(even) {
+		width:300px;
+		margin:0;
+		padding:0px;
+		display: block;
+		float:left;
+		position:relative;
+	}
+
+	/* --- CONTACT --- */
+
+	input {
+		width:98%;
+		font-size:14px;
+		padding:5px;
+		margin:5px 5px 10px 0px;
+	}
+
 }
 
+
+/* ----- TABLET ----- */
 @media screen and (min-width: 641px) and (max-width: 768px) {
 
-	/* --- HEADER/NAV --- */
+	/* --- HEADER ---*/
+
+	body {
+		max-width:100%;
+		overflow-x:hidden;
+	}
+
+	header {
+		position: static;
+		height:89px;
+		width:100%;
+		margin:0 auto;
+	}
 
 	h1 {
-		left:32%;
+		padding:27.5px 7% 27.5px 7%;
+		width:200px;
+		margin-top:0px;
+		margin-bottom:0px;
+		margin-left:5%;
+		margin-right:0px;
 	}
 
-	div#nav {
-		position: relative;
-		width:80%;
-		margin:0 auto;
-		top:2%;
-		margin:2%;
+	/* --- NAVIGATION --- */
+	nav {
+		position: absolute;
+		width: 100%;
+		top:30px;
+		right:-10%;
+	}
 
+	ul {
+		float:left;
+		margin-left: 52%;
+	}
+
+	li {
+		display:inline-block;
+		position:relative;
+		list-style-type: none;
+		border-style: solid;
+		border-width: 0px 1.5px 0px 0px;
+		border-color: #dddddd;
+		float:left;
+		text-align:center;
+		padding:0px 13px 0px 13px;
 
 	}
+
+	li:last-child {
+		border-width: 0px;
+	}
+
+	/* --- FOOTER --- */
+
+	footer {
+		background-color: #666666;
+		width:100%;
+		height:94px;	
+		border-style:solid;
+		border-color:#00afa8;
+		border-width: 8px 0px 0px 0px;
+	}
+
+	footer p {
+		display:block;
+		text-align: center;
+		padding:28.5px 50px 28.5px 50px;
+	}
+
 
 	/* --- DIV#MAIN --- */
 
-	div#main {
-
-		width:93%;
-		margin-top:5%;
-		margin-left:6%;
-		margin-right: 3%;
-		margin-bottom:5%;
-
+	h2#about {
+		padding: 13px 70% 35px 8px;
 	}
 
 	img#profilepic {
-		width:90%;
-		margin-left:5%;
-		display: block;
+		width:50%;
+		display:block;
+		float:left;
+		padding:32px 25px 25px 25px;
+	}
+
+	div#main {
+		position:relative;
+		left:1.5%;
+
+		width:69%;
+		display:block;
+		float:left;
+
+		background-color: white;
+		border-style: solid;
+		border-color:#dddddd;
+		border-width: 2px 2px 2px 2px;
 	}
 
 	div#main p {
-		display: block;
-		float: left;
+		padding:32px 0px 0px 0px;
 	}
 
-	/* --- DIV#SIDEBAR --- */
+
+	/* --- DIV#SIDEBAR ---*/
+
+	h3#connect {
+		color:#00afa8;
+
+		
+		float:left;
+
+		font-weight:bold;
+		border-style:solid;
+		border-color: #dddddd;
+		border-width: 0px 0px 3px 0px;
+		padding: 28px 64% 28px 0px;
+	}
+
+	img.social {
+		width:11%;
+		padding:15px 2px 0px 10px;
+	}
 
 	div#sidebar {
+		position:relative;
+		left:1.5%;
+		top:1%;
 
-		width:93%;
-		margin-left:6%;
-		margin-right:3%;
+		background-color:white;
+		border-style: solid;
+		border-color: #dddddd;
+		border-width: 2px 2px 2px 2px;
+
+		margin-bottom:144px;
+		margin-top:-10%;
+		float: left;
+		height:201px;
+		width:76.5%;
+		padding:0px 32px 0px 32px;
+		box-sizing: border-box;
 	}
+
 }
 
-@media screen and (min-width: 769px) and (max-width: 979px) {
-	
-	/* --- HEADER/NAV --- */
+/* ----- DESKTOP ----- */
+@media screen and (min-width: 769px) and (max-width: 980px) {
 
-	h1 {
-		left:12%;
+	/* --- HEADER --- */
+	body {
+		max-width: 980px;
+		overflow-x: hidden;
+
 	}
 
-	div#nav {
+	header {
+		position: relative;
+		height:89px;
 		width:100%;
 		margin:0 auto;
-		top:2%;
-		margin:2%;
+	}
 
+	h1 {
+		padding:27.5px 7% 27.5px 7%;
+		width:200px;
+		margin-top:0px;
+		margin-bottom:0px;
+		margin-left:11%;
+		margin-right:0px;
+	}
+
+	/* --- NAVIGATION --- */
+	nav {
+		position: absolute;
+		width: 100%;
+		top:30px;
+		right:-13%;
+	}
+
+	ul {
+		float:left;
+		margin-left: 52%;
+	}
+
+	li {
+		display:inline-block;
+		position:relative;
+		list-style-type: none;
+		border-style: solid;
+		border-width: 0px 1.5px 0px 0px;
+		border-color: #dddddd;
+		float:left;
+		text-align:center;
+		padding:0px 13px 0px 13px;
+
+	}
+
+	li:last-child {
+		border-width: 0px;
+	}
+
+	/* --- FOOTER --- */
+	footer {
+		background-color: #666666;
+		position:fixed;
+		bottom:0px;
+		width:100%;
+		height:94px;	
+		border-style:solid;
+		border-color:#00afa8;
+		border-width: 8px 0px 0px 0px;
+	}
+
+	footer p {
+		display:block;
+		text-align: center;
+		padding:28.5px 50px 28.5px 50px;
 	}
 
 	/* --- DIV#MAIN --- */
+	h2#about {
+		padding: 13px 70% 35px 8px;
+	}
+
+	img#profilepic {
+		width:94%;
+		display:block;
+		float:left;
+		padding:32px 25px 25px 25px;
+	}
 
 	div#main {
+		position:relative;
+		left:11%;
 
-		width:93%;
-		margin-top:5%;
-		margin-left:6%;
-		margin-right: 3%;
-		margin-bottom:5%;
-
-	}
-
-	/* --- DIV#SIDEBAR --- */
-
-	div#sidebar {
-		display: block;
+		width:35%;
+		display:block;
 		float:left;
 
-		width:93%;
-		margin-left:6%;
-		margin-right:1%;
+		background-color: white;
+		border-style: solid;
+		border-color:#dddddd;
+		border-width: 2px 2px 2px 2px;
 	}
 
-}
+	div#main p {
+		padding:32px 0px 0px 0px;
+	}
+	/* --- DIV#SIDEBAR ---*/
+	
+	div#sidebar {
+		position:absolute;
+		right:11%;
+		top:131px;
+		display: inline-block;
+		float: left;
 
-@media screen and (min-width: 980px) and (max-width: 1106px) {
-
-	/* --- HEADER/NAV --- */
-
-	h1 {
-		left:12%;
+		margin-bottom:144px;
+		height:201px;
+		padding:0px 32px 0px 32px;
+		box-sizing: border-box;
 	}
 
-	div#nav {
+	/* --- PORTFOLIO --- */
+
+	h2#portfolio {
+		padding:13px 50% 35px 8px;
+	}
+
+	h3.portname {
+		color:#ffffff;
+		background-color: #00afa8;
+		text-align: center;
+
+		position:absolute;
+		left:0px;
+		top:80%;
+		padding:23px 2.5% 23px 2.5%;
 		width:100%;
-		margin:0 auto;
-		top:2%;
-		margin:2%;
 
+		display:inline-block;
+		float:left;
 	}
 
-	/* --- DIV#SIDEBAR --- */
+	img.portfolio {
+		width:105%;
+		margin-top:40px;
+		position:relative;
+	}
 
-	div#sidebar {
-
+	div.thumbnail, div.thumbnail:nth-of-type(even) {
+		width:300px;
+		margin:0;
+		padding:0px;
 		display: block;
 		float:left;
-
-		width:30%;
-
+		position:relative;
 	}
+
+	/* --- CONTACT --- */
+
+	h2#contact {
+		padding: 13px 60% 35px 8px;
+	}
+
+	form {
+		clear:both;
+		padding:31px 0px 0px 0px;
+	}
+
+	input {
+		width:95%;
+		font-size:14px;
+		padding:5px;
+		margin:5px 5px 10px 0px;
+	}
+
+
 
 }

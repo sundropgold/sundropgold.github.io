@@ -2,86 +2,63 @@
 <html>
 	<head>
 		<title>Flynn Tan</title>
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-		<!-- BOOTSTRAP CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-		<!-- BOOTSWATCH CSS -->
-		<!-- UNITED THEME -->
-		<link rel="stylesheet" type="text/css" href="http://bootswatch.com/united/bootstrap.min.css">
-
-		<!-- CUSTOMIZED CSS -->
-		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
 
 	<body>
 
-		<!-- HEADER & NAVIGATION -->
+		<header>
+			<h1>Flynn Tan</h1>
 
-		
-		<nav class="navbar navbar-default navbar-inverse">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-12"> 
-						<div class="col-sm-12 col-md-8">
-							<h1 class="navbar-text">
-							Flynn Tan
-							</h1>
-						</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">About</a></li>
 
-						<div id="nav" class="col-xs-12 col-md-4">
-							<ul class="nav navbar-nav navbar-right">
-								<li><a href="index.html">About</a></li>
-								<li><a href="portfolio.html">Portfolio</a></li>
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
-						</div>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 
-					</div>
-				</div>
+		<div id="content">
+	
+			<div id="main">
+
+				<h2 id="contact">Contact</h2>
+
+				<form>
+
+					<label for="name">Name</label> 
+					<br/>
+					<input type="text" name="name" placeholder="John Smith">
+
+					<br/>
+
+					<label for="email">Email</label> 
+					<br/>
+					<input type="email" name="email" placeholder="example@gmail.com">
+
+					<br/>
+
+					<label for="msg">Message</label> 
+					<br/>
+					<input id="msg" type="text" name="msg">
+
+					<br/>
+
+					<input id="submit" type="submit" value="Submit">
+
+				</form>
 			</div>
-		</nav>
 
-		<!-- CONTENT -->
-		<div class="container">
-
-			<div class="row">
-
-				<!-- MAIN CONTENT -->
-
-				<div id="main" class="col-sm-12 col-md-8 col-lg-8">
-
-					<h2 id="contact">Contact</h2>
-						
-					<form>
-
-						<div class="form-group">
-							<label for="inputName">Name</label>
-							<input type="text" class="form-control" id="inputName" placeholder="John Smith">
-						</div>
-
-						<div class="form-group">
-							<label for="inputEmail">Email</label>
-							<input type="email" class="form-control" id="inputEmail" placeholder="example@gmail.com">
-						</div>
-
-						<div class="form-group">
-							<label for="inputMsg">Message</label>
-							<textarea id="inputMessage" class="form-control" rows="5"></textarea>
-						</div>
-
-
-						<button id="submit" type="submit" class="btn btn-warning">Submit</button>
-
-					</form>
-
-				</div>
-			
-				<!-- SIDEBAR -->
-
-				<div id="sidebar" class="col-sm-12 col-md-4 col-lg-4">
-
+			<div id="sidebar">
+				<aside>
 					<h3 id="connect">Connect With Me</h3>
 
 					<a href="https://github.com/sundropgold">
@@ -95,17 +72,14 @@
 					<a href="http://stackoverflow.com/users/7626807/flynn-tan">
 						<img class="social" src="assets/images/stackoverflow.png" alt="stackoverflow icon"/>
 					</a>
+				</aside>
+			</div>
 
-				</div>
-
-			</div> <!-- row div ends -->
 		</div>
 
-		<div class="container-fluid">
-			<div class="row">
-				<div id="footer" class="panel-footer">© Copyright 2017 Flynn Tan</div>
-			</div>
-		</div> <!-- end of container -->
+		<footer>
+			<p>© Copyright 2017 Flynn Tan</p>
+		</footer>
 
 	</body>
 </html>
