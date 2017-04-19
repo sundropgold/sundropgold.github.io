@@ -2,63 +2,93 @@
 <html>
 	<head>
 		<title>Flynn Tan</title>
-		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+		<!-- BOOTSTRAP CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- UNITED BOOTSWATCH THEME -->
+		<link rel="stylesheet" type="text/css" href="assets/css/united.css">
+
+		<!-- CUSTOMIZED CSS -->
+		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
 
 	<body>
 
-		<header>
-			<h1>Flynn Tan</h1>
+		<!-- HEADER & NAVIGATION -->
 
-			<nav>
-				<ul>
-					<li><a href="index.html">About</a></li>
+		
+		<nav class="navbar navbar-default navbar-inverse">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12"> 
+						<div class="col-sm-12 col-md-8">
+							<h1 class="navbar-text">
+							Flynn Tan
+							</h1>
+						</div>
 
-					<li><a href="portfolio.html">Portfolio</a></li>
-					
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
+						<div id="nav" class="col-xs-12 col-md-4">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="index.html">About</a></li>
+								<li><a href="portfolio.html">Portfolio</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
 
-		<div id="content">
-	
-			<div id="main">
-
-				<h2 id="about">About Me</h2>
-
-				<div id="clear"></div>
-
-				<img id="profilepic" src="assets/images/ftsun.png" alt="profile picture" />
-
-				<p>Hello !! I'm Flynn Tan, and I'm an artist, working to be a fullstack developer, and an optimist with a bottomless void of curiosity and learning! Born and raised in Florida, I began my creative interests primarily in art, design, and English there, later moving to New York for college and pursuing a major in English and a minor in Web Applications.</p> 
-
-				<p>Right now, I'm located in Austin, TX, working as a freelance web designer, art teacher, and zine contributor, as well as honing my miscellaneous skills in sewing and patterning, arts and craft, fiction writing, and tarot reading!</p>
+					</div>
+				</div>
 			</div>
+		</nav>
 
-			<div id="sidebar">
-				<h3 id="connect">Connect With Me</h3>
+		<!-- CONTENT -->
+		<div class="container">
 
-				<a href="https://github.com/sundropgold">
-					<img class="social" src="assets/images/github.png" alt="github icon"/>
-				</a>
+			<div class="row">
 
-				<a href="https://www.linkedin.com/in/flynn-tan-40503596/">
-					<img class="social" src="assets/images/linkedin.png" alt="linkedin icon"/>
-				</a>
+				<!-- MAIN CONTENT -->
 
-				<a href="http://stackoverflow.com/users/7626807/flynn-tan">
-					<img class="social" src="assets/images/stackoverflow.png" alt="stackoverflow icon"/>
-				</a>
-			</div>
+				<div id="main" class="col-sm-12 col-md-8 col-lg-8">
 
+						<h2 id="about">About Me</h2>
+
+						<img id="profilepic" src="assets/images/ftsun.png" alt="profile picture" />
+
+						<p>Hello !! I'm Flynn Tan, and I'm an artist, working to be a fullstack developer, and an optimist with a bottomless void of curiosity and learning! Born and raised in Florida, I began my creative interests primarily in art, design, and English there, later moving to New York for college and pursuing a major in English and a minor in Web Applications.</p> 
+
+						<p>Right now, I'm located in Austin, TX, working as a freelance web designer, art teacher, and zine contributor, as well as honing my miscellaneous skills in sewing and patterning, arts and craft, fiction writing, and tarot reading!</p>
+
+				</div>
+			
+				<!-- SIDEBAR -->
+
+				<div id="sidebar" class="col-sm-12 col-md-4 col-lg-4">
+
+					<h3 id="connect">Connect With Me</h3>
+
+					<a href="https://github.com/sundropgold">
+						<img class="social" src="assets/images/github.png" alt="github icon"/>
+					</a>
+
+					<a href="https://www.linkedin.com/in/flynn-tan-40503596/">
+						<img class="social" src="assets/images/linkedin.png" alt="linkedin icon"/>
+					</a>
+
+					<a href="http://stackoverflow.com/users/7626807/flynn-tan">
+						<img class="social" src="assets/images/stackoverflow.png" alt="stackoverflow icon"/>
+					</a>
+
+				</div>
+
+			</div> <!-- row div ends -->
 		</div>
 
-		<footer>
-			<p>© Copyright 2017 Flynn Tan</p>
-		</footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div id="footer" class="panel-footer">© Copyright 2017 Flynn Tan</div>
+			</div>
+		</div> <!-- end of container -->
 
 	</body>
 </html>
